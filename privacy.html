@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — TikTak</title>
+<meta name="description" content="How TikTak handles account tokens, generated content and the data sent to TikTok, YouTube and Instagram when you publish.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="dot">T</span>TikTak</a>
+    <nav class="top">
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#platforms">Platforms</a>
+      <a href="index.html#faq">FAQ</a>
+      <a class="legal" href="terms.html">Terms of Service</a>
+      <a class="legal" href="privacy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap legal-page">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective November 6, 2026 · Operated by ByteSize · <button type="button" class="mail-link" data-contact-mail title="Email ByteSize">Contact us</button></p>
+
+    <p>
+      TikTak is a desktop application that helps you create short vertical videos and publish them
+      to social platforms through those platforms' official APIs. This policy explains what
+      information the application handles, where it is stored and what leaves your computer.
+    </p>
+
+    <h2>1. Who we are</h2>
+    <p>
+      TikTak is provided by ByteSize ("we", "us"). We operate this website. The TikTak
+      application itself runs on your own computer under your control; we do not operate a
+      server that receives your videos, captions or account tokens.
+    </p>
+
+    <h2>2. Information the application handles</h2>
+    <ul>
+      <li><strong>Account authorisation data.</strong> When you connect TikTok, YouTube or Instagram, the platform returns an access token, a refresh token, your account identifier and your display name. We never receive your password.</li>
+      <li><strong>Content you create.</strong> Topics you enter, generated scripts, captions, narration audio, rendered video files, and the upload history for each run.</li>
+      <li><strong>Settings.</strong> Your preferences and the API keys you supply for language-model and text-to-speech providers.</li>
+      <li><strong>Technical logs.</strong> Local log files recording runs, errors and API responses, used to debug failed uploads.</li>
+    </ul>
+
+    <h2>3. Where it is stored</h2>
+    <p>
+      All of the above is stored on the computer running TikTak — in a local database and local
+      folders that you can inspect, back up or delete. It is not uploaded to us and we have no
+      ability to read it. Account tokens are kept in that local database and are only sent to the
+      platform they belong to.
+    </p>
+    <p>
+      This website is static. It sets no advertising or analytics cookies and does not fingerprint
+      visitors. The TikTak dashboard, when you run it locally, keeps interface preferences in your
+      browser's local storage on that machine.
+    </p>
+
+    <h2>4. How the information is used</h2>
+    <ul>
+      <li>To show your connected accounts and let you publish to them.</li>
+      <li>To upload the video and caption you requested, and to report the result back to you.</li>
+      <li>To refresh expired access tokens so a scheduled run does not fail.</li>
+      <li>To generate a script or narration, by sending the topic or text to the provider you configured.</li>
+    </ul>
+
+    <h2>5. What is shared, and with whom</h2>
+    <p>
+      We do not sell your information and we do not share it with advertisers or data brokers.
+      Data leaves your computer only in these cases:
+    </p>
+    <ul>
+      <li><strong>TikTok</strong> — when you publish, the video file, caption, privacy level and cover timestamp are sent to TikTok's Content Posting API. Your account identifier and display name are requested once, when you connect.</li>
+      <li><strong>YouTube (Google)</strong> — when you publish, the video file, title, description, privacy setting and playlist are sent through the YouTube Data API.</li>
+      <li><strong>Instagram (Meta)</strong> — when you publish, the video and caption are sent through the Instagram Graph API.</li>
+      <li><strong>Model and speech providers you configure</strong> — the topic text or narration text is sent to the provider whose API key you entered, under that provider's own terms.</li>
+      <li><strong>Legal requirements</strong> — if we are legally compelled to disclose information we hold, which in practice is limited to this website's hosting logs.</li>
+    </ul>
+
+    <h2>6. TikTok data in detail</h2>
+    <p>
+      TikTak requests the TikTok scopes <code>user.info.basic</code>, <code>video.publish</code> and
+      <code>video.upload</code>. The first is used only to display which account is connected. The
+      other two are used only to upload the video you asked to publish, either directly to your
+      profile or to your TikTok inbox as a draft. We do not read your TikTok feed, messages,
+      followers or analytics, and we do not post on your behalf without a run you started.
+    </p>
+
+    <h2>7. Retention and deletion</h2>
+    <p>
+      Data is retained on your machine until you delete it. Deleting a run in the dashboard removes
+      its record and files; deleting the application's data folder removes everything, including
+      stored tokens. Disconnecting an account deletes its token from the local database — you can
+      also revoke TikTak at any time in the platform's own settings (TikTok: Settings → Security and
+      permissions → Manage app permissions).
+    </p>
+
+    <h2>8. Security</h2>
+    <p>
+      Tokens and keys are stored in a local file readable by your user account, and all calls to
+      platform APIs use HTTPS. Because the data lives on your computer, its security also depends
+      on that computer's disk encryption, screen lock and user accounts. Keep your API keys private
+      and rotate them if a machine is lost or shared.
+    </p>
+
+    <h2>9. Your rights</h2>
+    <p>
+      Because the data is stored locally, you can exercise access, correction, export and deletion
+      directly: open the data folder, or delete runs in the dashboard. If you have a question about
+      information we might hold about you as the website operator, get in touch:
+      <button type="button" class="mail-link" data-contact-mail title="Email ByteSize">Contact us</button>.
+    </p>
+
+    <h2>10. Children</h2>
+    <p>
+      TikTak is not intended for anyone under 18, and we do not knowingly collect information from
+      children. Publishing to TikTok requires an account that meets TikTok's minimum age.
+    </p>
+
+    <h2>11. International transfers</h2>
+    <p>
+      When you publish, the platforms and model providers you use process the data in the countries
+      where they operate, under their own privacy terms. Your local files stay where your computer is.
+    </p>
+
+    <h2>12. Changes to this policy</h2>
+    <p>
+      We may update this policy when the application changes. The effective date above always shows
+      the current version, and material changes will be noted on this page.
+    </p>
+
+    <h2>13. Contact</h2>
+    <p>
+      Questions about this policy: <button type="button" class="mail-link" data-contact-mail title="Email ByteSize">Contact us</button>.
+    </p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 ByteSize. TikTak is an independent tool, not affiliated with TikTok, Google or Meta.</span>
+    <nav>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <button type="button" class="mail-link" data-contact-mail title="Email ByteSize">Contact us</button>
+    </nav>
+  </div>
+</footer>
+
+  <script src="contact.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TikTak — turn topics into published short videos</title>
+<meta name="description" content="TikTak turns a topic you choose into a finished vertical video and publishes it to TikTok, YouTube Shorts and Instagram Reels through the official platform APIs.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="dot">T</span>TikTak</a>
+    <nav class="top">
+      <a href="#how">How it works</a>
+      <a href="#platforms">Platforms</a>
+      <a href="#faq">FAQ</a>
+      <a class="legal" href="terms.html">Terms of Service</a>
+      <a class="legal" href="privacy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="hero">
+      <span class="pill">Official TikTok Content Posting API</span>
+      <h1>Turn a topic into a published short — without an editing session.</h1>
+      <p class="lede">
+        TikTak drafts a script from a subject you supply, narrates it, renders a vertical
+        video with your overlays and publishes it to TikTok, YouTube Shorts and Instagram
+        Reels as your own account. You keep the accounts, the API keys and every file it
+        produces.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#how">See how it works</a>
+        <a class="btn ghost" href="privacy.html">Read the privacy policy</a>
+      </div>
+    </div>
+
+    <section>
+      <h2>What it does</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Script</h3>
+          <p>Takes a subject — a news story, a keyword, an idea — and writes a short narration with a hook and a payoff, tuned to a target length.</p>
+        </div>
+        <div class="card">
+          <h3>Voice</h3>
+          <p>Renders the narration to speech with a local text-to-speech engine, so the audio track exists on your machine before anything is uploaded.</p>
+        </div>
+        <div class="card">
+          <h3>Video</h3>
+          <p>Composes a 1080×1920 video: captions, topic badge, logo and a green-screen background, sized for TikTok, Shorts and Reels.</p>
+        </div>
+        <div class="card">
+          <h3>Publish</h3>
+          <p>Sends the finished file to the platforms you connected, with the caption, privacy level and playlist you configured.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step">
+          <div>
+            <h3>Connect your accounts</h3>
+            <p>Sign in to TikTok, YouTube or Instagram once through each platform's official OAuth screen. TikTak never asks for a password — it receives a token that you can revoke at any time.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>Pick a topic and a length</h3>
+            <p>Type a topic or let TikTak pull from a news or trend source you enable. Choose the target duration and the voice.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>Review the draft</h3>
+            <p>The script, the voice track and the rendered video land in a local dashboard. Nothing is published until the run you started reaches its publishing step.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>Publish or save to drafts</h3>
+            <p>Post directly to your profile, or send the video to your TikTok inbox so you can add sounds and finishing touches in the TikTok app before it goes live.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="platforms">
+      <h2>Platforms</h2>
+      <div class="platforms">
+        <div class="platform">
+          <span class="tag">TikTok</span>
+          <p>Content Posting API — direct post and inbox (draft) upload, using the <code>video.publish</code> and <code>video.upload</code> scopes.</p>
+        </div>
+        <div class="platform">
+          <span class="tag">YouTube</span>
+          <p>YouTube Data API v3 — vertical videos under three minutes are uploaded as Shorts and added to the playlist you select.</p>
+        </div>
+        <div class="platform">
+          <span class="tag">Instagram</span>
+          <p>Instagram Graph API — Reels publishing for a connected professional account.</p>
+        </div>
+      </div>
+      <p style="margin-top:18px;font-size:14.5px;color:var(--muted)">
+        TikTak is an independent tool. It is not affiliated with, endorsed by or sponsored by
+        TikTok, Google or Meta.
+      </p>
+    </section>
+
+    <section>
+      <h2>Your data stays yours</h2>
+      <div class="note">
+        TikTak runs on your own computer. Generated videos, scripts, captions and the tokens for
+        your connected accounts are stored in a local database on that machine — not on a
+        TikTak server. There are no advertising trackers on this website and no analytics
+        cookies. The details, including what is sent to TikTok when you publish, are in the
+        <a href="privacy.html">Privacy Policy</a>.
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <div class="faq">
+        <details>
+          <summary>Does TikTak post without my approval?</summary>
+          <p>No. Every upload is the result of a run you start. Draft mode sends the video to your TikTok inbox, where it stays until you finish it in the TikTok app.</p>
+        </details>
+        <details>
+          <summary>Do I need my own API keys?</summary>
+          <p>Yes. You authorise TikTak against your own accounts and, for script generation and speech, you point it at your own model or TTS provider. Your keys are stored locally.</p>
+        </details>
+        <details>
+          <summary>Can I revoke access?</summary>
+          <p>Yes — disconnect the account in TikTak, or remove the app under Settings → Security and permissions in TikTok. Uploads stop as soon as the token is gone.</p>
+        </details>
+        <details>
+          <summary>What content can I publish?</summary>
+          <p>Only content you have the rights to publish, and only content that follows the TikTok Community Guidelines and the other platforms' rules. Automated spam, fake engagement and misleading content are not permitted.</p>
+        </details>
+        <details>
+          <summary>How do I delete my data?</summary>
+          <p>Delete individual runs in the dashboard, or remove the application's data folder to erase everything, including stored tokens.</p>
+        </details>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 ByteSize. TikTak is an independent tool, not affiliated with TikTok, Google or Meta.</span>
+    <nav>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <button type="button" class="mail-link" data-contact-mail title="Email ByteSize">Contact us</button>
+    </nav>
+  </div>
+</footer>
+
+  <script src="contact.js" defer></script>
+</body>
+</html>
